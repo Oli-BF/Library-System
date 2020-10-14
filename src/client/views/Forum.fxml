@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.ForumController">
+	<children>
+		<ImageView fitHeight="554.0" fitWidth="776.0" opacity="0.9">
+			<image>
+				<Image url="@LibraryBG.jpg" />
+			</image>
+		</ImageView>
+		<Label layoutX="151.0" layoutY="108.0" prefHeight="60.0" prefWidth="568.0" text="Welcome to Library Forum !" textFill="#da8e1c">
+			<font>
+				<Font name="System Bold" size="48.0" />
+			</font>
+		</Label>
+		<Button fx:id="enterChatRoomButton" layoutX="88.0" layoutY="220.0" mnemonicParsing="false" onAction="#EnterChatRoom" prefHeight="114.0" prefWidth="300.0" style="-fx-background-color: lightyellow; -fx-background-radius: 20;" text="Enter Global Chat Room" textFill="#da8e1c">
+			<font>
+				<Font size="24.0" />
+			</font>
+		</Button>
+		<Button fx:id="FriendListButton" layoutX="500.0" layoutY="220.0" mnemonicParsing="false" onAction="#showFriendList" prefHeight="114.0" prefWidth="175.0" style="-fx-background-color: lightyellow; -fx-background-radius: 20;" text="Friend List" textFill="#da8e1c">
+			<font>
+				<Font size="24.0" />
+			</font>
+		</Button>
+		<Button fx:id="backButton" layoutX="25.0" layoutY="31.0" mnemonicParsing="false" onAction="#showHomepage" prefHeight="38.0" prefWidth="86.0" style="-fx-background-radius: 50; -fx-background-color: lightyellow;" text="Back" textFill="#da8e1c">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Button>
+	</children>
+</AnchorPane>

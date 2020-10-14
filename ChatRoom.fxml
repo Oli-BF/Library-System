@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.ManagementController">
+	<children>
+      <ImageView fitHeight="554.0" fitWidth="776.0">
+         <image>
+            <Image url="@LibraryBG.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="backButton" layoutX="25.0" layoutY="31.0" mnemonicParsing="false" onAction="#showForum" prefHeight="38.0" prefWidth="86.0" style="-fx-background-radius: 50; -fx-background-color: lightyellow;" text="Back" textFill="#da8e1c">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="81.0" layoutY="88.0" prefHeight="412.0" prefWidth="606.0" style="-fx-background-color: lightyellow; -fx-background-radius: 20;" />
+	</children>
+</AnchorPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="554.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.LibraryController">
+	<children>
+      <ImageView fitHeight="554.0" fitWidth="776.0">
+         <image>
+            <Image url="@LibraryBg.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="26.0" layoutY="109.0" opacity="0.9" prefHeight="379.0" prefWidth="724.0" style="-fx-background-color: lightyellow; -fx-background-radius: 10;">
+         <children>
+            <ScrollPane layoutX="15.0" layoutY="74.0" prefHeight="291.0" prefWidth="695.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="341.0" prefWidth="679.0">
+                     <children>
+                        <TableView fx:id="bookTable" nodeOrientation="LEFT_TO_RIGHT" prefHeight="299.0" prefWidth="679.0" style="-fx-background-color: lightyellow;" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <columns>
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <HBox layoutX="98.0" layoutY="14.0" prefHeight="38.0" prefWidth="528.0">
+               <children>
+                  <TextField fx:id="searchTitle" onAction="#SearchBook" prefHeight="38.0" prefWidth="416.0" promptText="search a book here..." style="-fx-background-radius: 30; -fx-border-color: #da8e1c; -fx-border-radius: 30;" />
+                  <Button fx:id="searchButton" mnemonicParsing="false" onAction="#SearchBook" prefHeight="38.0" prefWidth="85.0" style="-fx-background-radius: 50; -fx-background-color: white; -fx-border-color: #da8e1c; -fx-border-radius: 50;" text="Search" textFill="#da8e1c">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Button fx:id="backButton" layoutX="25.0" layoutY="31.0" mnemonicParsing="false" onAction="#showHomepage" prefHeight="38.0" prefWidth="86.0" style="-fx-background-radius: 50; -fx-background-color: lightyellow;" text="Back" textFill="#da8e1c">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="returnBooksButton" layoutX="643.0" layoutY="31.0" mnemonicParsing="false" onAction="#showReturnBook" prefHeight="38.0" prefWidth="107.0" style="-fx-background-radius: 50; -fx-background-color: lightyellow;" text="Return Books" textFill="#da8e1c">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+	</children>
+</AnchorPane>

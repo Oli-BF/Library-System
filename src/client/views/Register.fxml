@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="554.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.RegisterController">
+	<children>
+      <ImageView fitHeight="554.0" fitWidth="776.0">
+         <image>
+            <Image url="@LibraryBg.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="173.0" layoutY="39.0" opacity="0.9" prefHeight="482.0" prefWidth="430.0" style="-fx-background-color: lightyellow; -fx-background-radius: 10;">
+         <children>
+      				<GridPane layoutX="39.0" layoutY="66.0" prefHeight="350.0" prefWidth="330.0">
+      					<columnConstraints>
+      						<ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="153.0" />
+      						<ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="177.0" />
+      					</columnConstraints>
+      					<rowConstraints>
+                  <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      						<RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      						<RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      					</rowConstraints>
+      					<children>
+      						<Text fill="#da8e1c" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Password  :" textAlignment="RIGHT" wrappingWidth="145.6171875" x="10.0" GridPane.rowIndex="1">
+      							<font>
+      								<Font size="18.0" />
+      							</font>
+      						</Text>
+      						<Text fill="#da8e1c" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm password :" wrappingWidth="153.4072265625" GridPane.rowIndex="2">
+      							<font>
+      								<Font size="18.0" />
+      							</font>
+      						</Text>
+                  <Text fill="#da8e1c" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Username  :" textAlignment="RIGHT" wrappingWidth="145.8212890625" x="10.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="mid" prefHeight="30.0" prefWidth="171.0" GridPane.columnIndex="1" />
+                  <PasswordField fx:id="password" prefHeight="30.0" prefWidth="115.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      			  <PasswordField fx:id="confirmPass" prefHeight="30.0" prefWidth="58.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="firstname" prefHeight="30.0" prefWidth="171.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="lastname" prefHeight="30.0" prefWidth="171.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="email" prefHeight="30.0" prefWidth="171.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="telephone" prefHeight="30.0" prefWidth="171.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Text fill="#da8e1c" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="First name  :" textAlignment="RIGHT" wrappingWidth="145.8212890625" x="10.0" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#da8e1c" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Last name  :" textAlignment="RIGHT" wrappingWidth="145.8212890625" x="10.0" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#da8e1c" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :" textAlignment="RIGHT" wrappingWidth="145.8212890625" x="10.0" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#da8e1c" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone  :" textAlignment="RIGHT" wrappingWidth="145.8212890625" x="10.0" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+      					</children>
+      				</GridPane>
+      				<HBox alignment="CENTER" layoutX="50.0" layoutY="419.0" prefHeight="49.0" prefWidth="319.0" spacing="20.0">
+      					<children>
+      						<Button fx:id="registerButton" layoutX="266.0" layoutY="344.0" lineSpacing="10.0" mnemonicParsing="false" onAction="#register" prefHeight="40.0" prefWidth="118.0" style="-fx-background-color: lightyellow; -fx-border-color: #da8e1c; -fx-border-radius: 30;" text="Sign Up" textFill="#da8e1c">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+      						<Button fx:id="cancelButton" layoutX="298.0" layoutY="344.0" mnemonicParsing="false" onAction="#cancelRegister" prefHeight="41.0" prefWidth="118.0" style="-fx-background-color: lightyellow; -fx-border-color: #da8e1c; -fx-border-radius: 30;" text="Cancel" textFill="#da8e1c">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+      					</children>
+      				</HBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="75.0" layoutY="14.0" prefHeight="41.0" prefWidth="330.0" text="Become A Member" textAlignment="CENTER" textFill="#da8e1c">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+	</children>
+</AnchorPane>

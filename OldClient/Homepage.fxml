@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:controller="client.controllers.HomepageController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" >
+	<children>
+		<Label layoutX="334.0" layoutY="41.0" prefHeight="55.0" prefWidth="125.0" text="Welcome!">
+			<font>
+				<Font size="25.0" />
+			</font>
+		</Label>
+		<Button layoutX="104.0" layoutY="220.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="175.0" text="Library">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Button>
+		<Button layoutX="478.0" layoutY="220.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="175.0" text="Forum">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Button>
+		<Button onAction="#Logout" layoutX="16.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="62.0" text="Logout" />
+	</children>
+</AnchorPane>
+
+
+
+<!--
+
+Old Class
+  
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.HomePageController">
+   <children>
+      <Label layoutX="334.0" layoutY="41.0" prefHeight="55.0" prefWidth="109.0" text="Welcome!">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="104.0" layoutY="220.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="175.0" text="Library">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="478.0" layoutY="220.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="175.0" text="System">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="16.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="62.0" text="&lt;   Back" />
+   </children>
+</AnchorPane>
+-->

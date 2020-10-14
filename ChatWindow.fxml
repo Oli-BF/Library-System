@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.ManagementController">
+	<children>
+      <ImageView fitHeight="554.0" fitWidth="776.0">
+         <image>
+            <Image url="@LibraryBG.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="backButton" layoutX="25.0" layoutY="31.0" mnemonicParsing="false" onAction="#showForum" prefHeight="38.0" prefWidth="86.0" style="-fx-background-radius: 50; -fx-background-color: lightyellow;" text="Back" textFill="#da8e1c">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="81.0" layoutY="88.0" prefHeight="412.0" prefWidth="606.0" style="-fx-background-color: lightyellow; -fx-background-radius: 20;">
+         <children>
+            <HBox layoutX="29.0" layoutY="360.0" prefHeight="38.0" prefWidth="549.0">
+               <children>
+                  <TextField prefHeight="38.0" prefWidth="448.0" promptText="Say someting..." style="-fx-background-radius: 30; -fx-border-color: #da8e1c; -fx-border-radius: 30;" />
+                  <Button fx:id="sendButton" mnemonicParsing="false" onAction="#SendMsg" prefHeight="38.0" prefWidth="86.0" style="-fx-background-radius: 50; -fx-background-color: lightyellow; -fx-border-color: #da8e1c; -fx-border-radius: 50;" text="Send" textFill="#da8e1c">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <ListView fx:id="ChatWindow" layoutX="29.0" layoutY="47.0" prefHeight="295.0" prefWidth="549.0" />
+            <Label fx:id="Header" layoutX="224.0" layoutY="8.0" prefHeight="32.0" prefWidth="158.0" text="Chatting with " textFill="#da8e1c">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+	</children>
+</AnchorPane>

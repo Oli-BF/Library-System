@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.BookDetailsController">
+	<children>
+      <ImageView fitHeight="554.0" fitWidth="776.0">
+         <image>
+            <Image url="@LibraryBG.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="forumButton" layoutX="291.0" layoutY="461.0" mnemonicParsing="false" onAction="#showForum" prefHeight="54.0" prefWidth="196.0" style="-fx-background-color: lightyellow; -fx-background-radius: 30; -fx-border-radius: 30;" text="Discuss on the Forum!" textFill="#da8e1c">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="25.0" layoutY="31.0" mnemonicParsing="false" onAction="#showSearchResults" prefHeight="38.0" prefWidth="86.0" style="-fx-background-radius: 50; -fx-background-color: lightyellow;" text="Back" textFill="#da8e1c">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="112.0" layoutY="96.0" prefHeight="209.0" prefWidth="555.0" style="-fx-background-color: lightyellow; -fx-background-radius: 20;">
+         <children>
+            <GridPane layoutX="33.0" layoutY="16.0" prefHeight="124.0" prefWidth="240.0">
+               <children>
+                  <Text fill="#da8e1c" strokeType="OUTSIDE" strokeWidth="0.0" text="BookID">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#da8e1c" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#da8e1c" strokeType="OUTSIDE" strokeWidth="0.0" text="Genre" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="BID" prefHeight="44.0" prefWidth="177.0" GridPane.columnIndex="1" />
+                  <Label fx:id="Title" prefHeight="44.0" prefWidth="179.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="Genre" prefHeight="40.0" prefWidth="183.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="85.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="247.0" minWidth="10.0" prefWidth="200.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane layoutX="273.0" layoutY="16.0" prefHeight="124.0" prefWidth="268.0">
+               <children>
+                  <Text fill="#da8e1c" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#da8e1c" strokeType="OUTSIDE" strokeWidth="0.0" text="Publisher" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#da8e1c" strokeType="OUTSIDE" strokeWidth="0.0" text="3rd Party Seller" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="Author" prefHeight="44.0" prefWidth="177.0" GridPane.columnIndex="1" />
+                  <Label fx:id="Publisher" prefHeight="44.0" prefWidth="177.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="TPS" prefHeight="44.0" prefWidth="177.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="116.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="247.0" minWidth="10.0" prefWidth="152.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <TableView layoutX="112.0" layoutY="268.0" prefHeight="173.0" prefWidth="555.0" style="-fx-background-radius: 20; -fx-background-color: lightyellow;">
+        <columns>
+          <TableColumn prefWidth="136.0" text="Borrow Length" />
+          <TableColumn prefWidth="145.0" text="No. of Copies" />
+            <TableColumn prefWidth="149.0" text="Reservation" />
+        </columns>
+      </TableView>
+	</children>
+</Pane>

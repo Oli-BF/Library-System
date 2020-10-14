@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.HomepageController">
+	<children>
+      <ImageView fitHeight="554.0" fitWidth="776.0">
+         <image>
+            <Image url="@LibraryBG.jpg" />
+         </image>
+      </ImageView>
+		<Label layoutX="286.0" layoutY="103.0" prefHeight="60.0" prefWidth="250.0" text="Welcome!" textFill="#da8e1c">
+			<font>
+				<Font name="System Bold" size="48.0" />
+			</font>
+		</Label>
+		<Button fx:id="LibraryPage" layoutX="106.0" layoutY="220.0" mnemonicParsing="false" onAction="#showLibrary" prefHeight="114.0" prefWidth="175.0" style="-fx-background-color: lightyellow; -fx-background-radius: 20;" text="Library" textFill="#da8e1c">
+			<font>
+				<Font size="24.0" />
+			</font>
+		</Button>
+		<Button fx:id="ForumPage" layoutX="491.0" layoutY="220.0" mnemonicParsing="false" onAction="#showForum" prefHeight="114.0" prefWidth="175.0" style="-fx-background-color: lightyellow; -fx-background-radius: 20;" text="Forum" textFill="#da8e1c">
+			<font>
+				<Font size="24.0" />
+			</font>
+		</Button>
+		<Button fx:id="logoutButton" layoutX="25.0" layoutY="31.0" mnemonicParsing="false" onAction="#Logout" prefHeight="38.0" prefWidth="86.0" style="-fx-background-radius: 50; -fx-background-color: lightyellow;" text="Logout" textFill="#da8e1c">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+	</children>
+</AnchorPane>

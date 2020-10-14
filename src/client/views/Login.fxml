@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="554.0" prefWidth="776.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.LoginController">
+	<children>
+      <ImageView fitHeight="555.0" fitWidth="777.0">
+         <image>
+            <Image url="@LibraryBG.jpg" />
+         </image>
+      </ImageView>
+		<Pane layoutX="174.0" layoutY="113.0" opacity="0.9" prefHeight="330.0" prefWidth="430.0" style="-fx-background-color: lightyellow; -fx-background-radius: 10;">
+			<children>
+				<Button fx:id="LoginButton" layoutX="171.0" layoutY="259.0" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="89.0" style="-fx-background-color: lightyellow; -fx-border-color: #bc7606; -fx-border-radius: 50;" text="Sign In" textFill="#da8e1c">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+				<Label alignment="CENTER" layoutX="63.0" layoutY="7.0" prefHeight="48.0" prefWidth="304.0" text="Member Log in" textFill="#da8e1c">
+					<font>
+						<Font name="System Bold" size="36.0" />
+					</font>
+				</Label>
+            <GridPane layoutX="53.0" layoutY="83.0" prefHeight="165.0" prefWidth="325.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" prefWidth="130.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="187.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+      				<Label alignment="CENTER" prefHeight="23.0" prefWidth="165.0" text="Username  :" textAlignment="CENTER" textFill="#da8e1c">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+      				<TextField fx:id="mid" prefHeight="23.0" prefWidth="101.0" GridPane.columnIndex="1" />
+      				<PasswordField fx:id="password" prefHeight="23.0" prefWidth="101.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER" prefHeight="23.0" prefWidth="142.0" text="Password   :" textAlignment="CENTER" textFill="#da8e1c" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="RegisterLink" alignment="CENTER_RIGHT" onAction="#showRegister" prefHeight="25.0" prefWidth="191.0" text="Not a member? Sign up" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Hyperlink fx:id="LibrarianLink" alignment="CENTER" onAction="#showLibrarian" prefHeight="25.0" prefWidth="194.0" text="I'm a Librarian" underline="true" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>

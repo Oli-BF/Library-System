@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="554.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.ReturnBooksController">
+
+	<children>
+      <ImageView fitHeight="555.0" fitWidth="776.0" opacity="0.9">
+         <image>
+            <Image url="@LibraryBg.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="18.0" layoutY="50.0" prefHeight="455.0" prefWidth="757.0">
+         <children>
+            <ScrollPane layoutX="32.0" layoutY="59.0" prefHeight="340.0" prefWidth="694.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="31.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="346.0" prefWidth="679.0">
+                     <children>
+                        <TableView fx:id="bookTable" nodeOrientation="LEFT_TO_RIGHT" prefHeight="346.0" prefWidth="679.0" style="-fx-background-color: lightyellow;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <columns>
+                              <TableColumn fx:id="BIDColumn" prefWidth="83.0" text="Book ID" />
+                              <TableColumn fx:id="TitleColumn" prefWidth="111.0" text="Title" />
+                              <TableColumn fx:id="GenreColumn" prefWidth="86.0" text="Genre" />
+                              <TableColumn fx:id="AuthorColumn" prefWidth="108.0" text="Author" />
+                              <TableColumn fx:id="BLColumn" prefWidth="88.0" text="Borrow Length" />
+                              <TableColumn fx:id="BDColumn" prefWidth="85.0" text="Borrow Date" />
+                              <TableColumn fx:id="ReturnColumn" prefWidth="108.0" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="backButton" layoutX="27.0" layoutY="31.0" mnemonicParsing="false" onAction="#showLibrary" prefHeight="38.0" prefWidth="86.0" style="-fx-background-radius: 50; -fx-background-color: lightyellow;" text="Back" textFill="#da8e1c">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+	</children>
+</AnchorPane>
