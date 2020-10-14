@@ -6,7 +6,6 @@ A library system combined with a forum system to allow users to check out and di
 
 ---
 
-* 
+* A library system created as part of a group project for my MSc Computer Science at the University of Birmingham.
 
 ---
-
